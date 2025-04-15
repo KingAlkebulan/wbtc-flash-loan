@@ -1,0 +1,30 @@
+{
+  "name": "wbtc-flash-loan",
+  "version": "1.0.0",
+  "description": "WBTC Flash Loan Arbitrage Contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "deploy:amoy": "npx hardhat run scripts/deploy.js --network amoy"
+  },
+  "keywords": [
+    "blockchain",
+    "flash-loan",
+    "wbtc",
+    "arbitrage"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.19.4"
+  },
+  "dependencies": {
+    "@aave/core-v3": "^1.17.2",
+    "@chainlink/contracts": "^0.8.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.0.3"
+  }
+}
